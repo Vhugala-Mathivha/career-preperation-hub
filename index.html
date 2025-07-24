@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is professional</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="screen-split">
+        <div class="left-panel">
+
+           
+        <div class="form-section">
+            <form id="studentForm">
+                <label class="firstname">Enter your first name</label> <br>
+                <input type="text" class="enter" required><br><br>
+
+                <label class="lastname">Enter your last name</label><br>
+                <input type="text" class="enter" required><br><br>
+
+                <label class="student">Are you a student?</label>
+                <div class="radio-group">
+                    <div>
+                        <input type="radio" id="yesStud" name="studentStatus" value="yes">
+                        <label class="yestud" for="yesStud">YES</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="noStud" name="studentStatus" value="no">
+                        <label class="notud" for="noStud">NO</label>
+                    </div>
+                </div>
+                <br>
+                <div id="studentNumberField" style="display: none;">
+                    <label class="studno">Enter your student number</label>
+                    <input type="text" class="studentNumber" name="studentNumber">
+                </div>
+
+                <button type="submit" class="butt">Submit</button>
+            </form>
+        </div>
+
+        <div class="about">
+            <p>
+                <strong>This Is Professional</strong> exists to close the gap between education and employment by equipping students with the essential
+                skills and confidence needed to navigate the professional world successfully. Combining expert insights with real-world
+                tips, the platform empowers young people to develop the mindset, skills, and knowledge required to thrive in today’s
+                competitive job market.
+            </p>
+            <br>
+            <p class="other">
+                <strong>ALSO...</strong>
+            </p>
+            
+            <p>Visit <a href="https://shareandcarecollective.netlify.app/">Share and Care Collective</a>, a safe space to share your story, get support, and help others.
+            All for free.</p>
+        </div>
+
+            <footer>
+                <p>Coded with 💗 by <em>Vhugala Mathivha</em>. Email:
+                    <a href="mailto:vhugalamathivha@gmail.com">vhugalamathivha@gmail.com</a>
+                </p>
+            </footer>
+        </div>
+
+        <div class="right-panel">
+            <header>
+                <h1>This is Professional</h1>
+                <h3>Helping students step confidently into the professional world</h3>
+            </header>
+            
+            <main class="main">
+                <div class="card">Career Preparation Hub</div>
+                <div class="card">Career Tips Blog</div>
+                <div class="card">Portfolio</div>
+                <div class="card">Community Forum</div>
+            </main>
+
+            <div class="account">
+                <form action="">
+                    <input type="button" id="shrinkBtn" class="button" value="Let's Get Professional!">
+            
+                </form>
+            </div>
+           
+        </div>
+    </div>
+    
+    
+</body>
+<script src="index.js"></script>
+</html>

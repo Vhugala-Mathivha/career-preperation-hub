@@ -1,0 +1,236 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body{
+    font-family: 'Inter', sans-serif; 
+}
+
+header{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 2.5rem;
+}
+
+h1{
+    margin: 0px;
+}
+
+h3{
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.main{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        margin: 210px 210px 0px 210px;
+}
+
+.card {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 28px;
+        padding: 10px;
+}
+
+.card:hover{
+    /* font-size: x-large; */
+    color:white;
+    background: rgb(2, 44, 44);
+   
+}
+
+
+
+.screen-split {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.right-panel {
+    width: 90%;
+    /*background-image: url("images/animated-group-people-collaborating-meeting.jpg");*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow-y: auto;
+    
+    background:
+            url("images/animated-group-people-collaborating-meeting.jpg"),
+            rgba(5, 5, 5, 0.3);
+        background-size: cover;
+        background-blend-mode: darken;
+}
+
+.left-panel,
+.right-panel {
+    height: 100%;
+   
+}
+
+.left-panel {
+    width: 10%;
+    background: rgb(2, 44, 44);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width 0.7s ease;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer em {
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+}
+
+footer a {
+    color: #a8e6ff !important;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+footer a:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
+.right-panel {
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.button{
+    padding: 15px 30px;
+    font-size:small;
+    border: none;
+    border-radius: 23px;
+    display: block;
+    margin: 20px auto;
+    background: white;
+    color: rgb(2, 44, 44);
+    /*color: white;
+    background: rgb(2, 44, 44);*/
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+.button:hover{
+   color: white;
+    background: rgb(2, 44, 44);
+   /* background: white;
+    color: rgb(2, 44, 44);*/
+}
+
+.screen-split.shrink-left .left-panel {
+    width: 25%;
+    transition: width 0.7s ease;
+}
+
+.screen-split.shrink-left .right-panel {
+    width: 75%;
+    transition: width 0.7s ease;
+}
+
+.left-panel footer {
+    display: none;
+}
+.form-section {
+    display: none;
+}
+
+.form-section{
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.butt{
+    padding: 15px 30px;
+        font-size:medium;
+        border: none;
+        border-radius: 23px;
+        display: block;
+        margin: 20px auto;
+        background: white;
+        color: rgb(2, 44, 44);
+        transition: all 0.3s ease;
+}
+
+.butt:hover{
+    color: white;
+    background: rgb(2, 44, 44);
+    border: 1px solid white;
+}
+
+.enter{
+    width: 80%;
+    padding: 10px;
+    margin: 3px;
+    background: rgb(163, 163, 163);
+    border: none;
+}
+
+.about {
+    display: none;
+    /* initially hidden */
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    width: 90%;
+    margin: 3px 30px 60px 20px;
+    background:rgb(15, 26, 26);
+    color: rgb(163, 163, 163);
+    
+}
+
+strong{
+    color: white;
+}
+
+other{
+    text-align: center;
+}
+
